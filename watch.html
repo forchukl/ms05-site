@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Lara, Sales Coach</title>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --card: #ffffff;
+      --text: #1f2a37;
+      --muted: #5b6676;
+      --accent: #c2603f;
+      --accent-soft: #f6e4dc;
+      --line: #e6e1da;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 48px 16px;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    .back { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.9rem; margin-bottom: 20px; }
+    .back:hover { color: var(--accent); }
+    h1 { font-size: 2.2rem; line-height: 1.15; margin-bottom: 12px; }
+    .tagline { font-size: 1.15rem; color: var(--muted); margin-bottom: 28px; }
+    video {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #000;
+      margin-bottom: 24px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+    }
+    section p { font-size: 1.05rem; margin-bottom: 18px; }
+    .book {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+    }
+    .book:hover { opacity: 0.9; }
+    .note { font-size: 0.9rem; color: var(--muted); margin: 14px 0 0; }
+    footer { margin-top: 36px; font-size: 0.85rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">&larr; Back to home</a>
+    <h1>Meet Lara, sales coach.</h1>
+    <p class="tagline">New to selling or years in, here's how I can help you close more deals.</p>
+
+    <video controls playsinline preload="metadata">
+      <source src="lara-intro.mp4" type="video/mp4">
+      Your browser can't play this video.
+    </video>
+
+    <section>
+      <p>Ready to talk about your sales goals?</p>
+      <a class="book" href="https://scheduler.zoom.us/lara-forchuk/book-time-with-lara-forchuk-" target="_blank" rel="noopener">Book a conversation</a>
+      <p class="note">15 minutes on Zoom. Pick a time that works for you.</p>
+    </section>
+
+    <footer>
+      Drafted with AI assistance; reviewed by Lara Forchuk.
+    </footer>
+  </main>
+</body>
+</html>
